@@ -1,26 +1,167 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "FutoSans";
+  src: url("/fonts/futo-sans-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@font-face {
+  font-family: "FutoSans";
+  src: url("/fonts/futo-sans-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FutoSans";
+  src: url("/fonts/futo-sans-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FutoSans";
+  src: url("/fonts/futo-sans-bold-italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@theme {
+  --color-white: #ffffff;
+  --color-black: #021f59;
+  --color-secondary: #edefff;
+  --color-blue: #1347ff;
+
+  --color-accent-gradient: linear-gradient(
+    90deg,
+    #00c5ff 0%,
+    #153bff 54%,
+    #cab7fc 98%
+  );
+
+  --shadow-subtle: 0 0 2px rgba(147, 147, 147, 0.01),
+    0 0 8px rgba(147, 147, 147, 0.01), 0 0 12px rgba(147, 147, 147, 0.02),
+    0 0 22px rgba(147, 147, 147, 0.03), 0 0 66px rgba(147, 147, 147, 0.06),
+    0 0 96px rgba(147, 147, 147, 0.08);
+
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-Futo: "FutoSans", sans-serif;
+
+
+  --shadow-gradient: 0px 0px 66px rgba(147, 147, 147, 0.06);
+--shadow-blue: 0px 0px 48px rgba(19, 71, 255, 0.35);
+  --shadow-white: 0px 0px 12px rgba(255, 255, 255, 0.03);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.shadow-hover-gradient {
+  transition: box-shadow 0.3s ease;
+}
+.shadow-hover-gradient:hover {
+  box-shadow: var(--shadow-gradient);
+}
+
+.shadow-hover-blue {
+  transition: box-shadow 0.3s ease;
+}
+.shadow-hover-blue:hover {
+  box-shadow: var(--shadow-blue);
+}
+
+.shadow-hover-white {
+  transition: box-shadow 0.3s ease;
+}
+.shadow-hover-white:hover {
+  box-shadow: var(--shadow-white);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+h1,
+h2 {
+  font-family: "FutoSans", sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-family: "FutoSans", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0;
+}
+
+h4 {
+  font-family: "Geist", sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0;
+}
+
+h4 {
+  font-family: "Geist", sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #d5d5d5;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 32px;
+}
+
+a {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color-blue);
+}
+
+/* globals.css или theme.css */
+.hide-scrollbar-x {
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* IE 10+ */
+}
+
+.hide-scrollbar-x::-webkit-scrollbar {
+  display: none;                 /* Chrome/Safari/WebKit */
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
