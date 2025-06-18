@@ -12,7 +12,7 @@ const benefits = [
 
 export default function Main() {
   return (
-    <main id="#Product" className="relative px-[16px] md:px-[40px] pb-[70px] md:pb-[211px] text-white">
+    <main id="product" className="relative px-[16px] md:px-[40px] pb-[70px] md:pb-[211px] text-white">
       <div className="relative max-w-[1328px] flex mx-auto z-[1]">
         <div className="md:w-1/2 space-y-[50px] pt-[78px] md:pt-[220px]">
           <div className="space-y-[42px] md:space-y-[66px]">

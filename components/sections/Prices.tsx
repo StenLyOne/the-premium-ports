@@ -51,7 +51,7 @@ const data = [
 
 export default function Prices() {
   return (
-    <section className="bg-secondary pt-[40px] md:pt-[140px]">
+    <section id="pricing" className="bg-secondary pt-[40px] md:pt-[140px]">
       <div className="space-y-[32px]">
         <div className="text-center text-black space-y-[20px] md:space-y-[36px]">
           <h2>Subscriptions and prices</h2>

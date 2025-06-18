@@ -49,7 +49,7 @@ const data = [
 
 export default function FAQ() {
   return (
-    <section className="pb-[40px] px-[16px] md:px-[40px] py-[40px] md:py-[140px] bg-[#F3F5FF] overflow-hidden">
+    <section id="faq" className="pb-[40px] px-[16px] md:px-[40px] py-[40px] md:py-[140px] bg-[#F3F5FF] overflow-hidden">
       <div className="max-w-[1328px] mx-auto flex flex-col justify-between md:flex-row gap-[40px]">
         <h2 className="text-black text-center">
           FAQ

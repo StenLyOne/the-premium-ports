@@ -31,10 +31,11 @@ export default function Locations() {
   return (
     <section
       ref={ref}
-      className="pb-[40px]  md:px-[40px] py-[40px] md:py-[140px] bg-white space-y-[80px]"
+      id="locations"
+      className="pb-[40px]  md:px-[40px] py-[40px] md:py-[140px] bg-white "
     >
       {/* Header */}
-      <div>
+      <div className=" space-y-[40px] md:space-y-[80px]">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-[1328px] mx-auto flex gap-8">
           <div className="space-y-[22px] px-[16px] md:max-w-[504px] text-center md:text-left">
             <h2 className="!text-black">Top Locations</h2>
@@ -49,7 +50,7 @@ export default function Locations() {
         </div>
 
         {/* Desktop block */}
-        <div className="max-w-[1328px] mx-auto space-y-6 md:grid md:grid-cols-4 md:grid-rows-3 md:gap-[24px] hidden md:block">
+        <div className="max-w-[1328px] mx-auto  md:grid md:grid-cols-4 md:grid-rows-3 md:gap-[24px] hidden md:block">
           {data.map((ele, index) => (
             <div className="flex gap-[12px] items-center" key={index}>
               <img src={`/svg/${ele}.svg`} alt="" />

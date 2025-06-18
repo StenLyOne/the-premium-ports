@@ -28,7 +28,7 @@ export default function Integration() {
   return (
     <section
       ref={sectionRef}
-      className="pb-[40px] md:px-[40px] py-[40px] md:py-[140px] bg-white space-y-[80px]"
+      className="pb-[40px] min-[1100px]:px-[40px] py-[40px] md:py-[140px] bg-white space-y-[80px]"
     >
       <div className="max-w-[1328px] mx-auto">
         {/* Заголовки */}
@@ -40,14 +40,14 @@ export default function Integration() {
         </div>
 
         {/* 💻 Десктоп */}
-        <div className="hidden min-[1000px]:flex justify-center gap-[24px]">
+        <div className="hidden min-[1100px]:flex justify-center gap-[24px] py-[48px]">
           {data.map((ele, index) => (
             <IntegrationItem key={index} title={ele} />
           ))}
         </div>
 
         {/* 📱 Мобилка: 2 строки, каждая с полным списком, дублированным */}
-        <div className="flex flex-col gap-[16px] min-[1000px]:hidden overflow-hidden py-[40px] md:py-[48px] px-[16px]">
+        <div className="flex flex-col gap-[16px] min-[1100px]:hidden overflow-hidden py-[40px] md:py-[48px] px-[16px]">
           {/* Первая строка */}
           <motion.div
             style={{ x: translateRow1 }}

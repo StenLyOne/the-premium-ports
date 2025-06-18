@@ -5,8 +5,7 @@ import Button from "../ui/Button";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["Product", "Pricing", "Locations", "FAQ", "Contacts"];
-
+  const navItems = ["Product", "Pricing", "Locations", "FAQ"];
   return (
     <header className="fixed top-0 right-0 left-0 z-[100] bg-[#00143B]/90">
       <div className="flex justify-between items-center py-[24px] px-[16px] md:px-[40px] gap-[16px] md:gap-[24px]">
@@ -33,10 +32,10 @@ export default function Header() {
 
         {/* Desktop button */}
 
-        <div className="flex-1 min-w-0 md:hidden ">
+        <div className="flex-1 min-w-0 md:hidden">
           <div className="flex justify-center">
             <button
-              className=" w-[89px] max-w-[200px] min-w-[90px] py-[8px] px-[20px] text-white text-[10px] font-bold rounded-[20px]"
+              className=" w-full max-w-[200px] min-w-[90px] py-[8px] px-[20px] text-white text-[10px] font-bold rounded-[20px]"
               style={{
                 background:
                   "linear-gradient(90deg, #00C5FF 0%, #153BFF 54%, #CAB7FC 98%)",
@@ -50,7 +49,7 @@ export default function Header() {
         {/* Burger */}
         <div className="flex gap-[24px] items-center justify-center">
           <div className="hidden md:flex gap-[24px]">
-            <Button text="Pricing" color="gradient" link="/" size={true} />
+            <Button text="GET DEAL" color="gradient" link="/" size={true} />
           </div>
 
           <button
@@ -93,7 +92,7 @@ export default function Header() {
               {item}
             </a>
           ))}
-          <Button text="Pricing" color="gradient" link="/" size={true} />
+          <Button text="GET DEAL" color="gradient" link="/" size={true} />
         </div>
       </div>
     </header>
