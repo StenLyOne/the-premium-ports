@@ -12,7 +12,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
 
   return (
     <div
-      className={`bg-white shadow-subtle rounded-[20px] p-[20px] shadow-sm transition-all duration-300 ${
+      className={`bg-white shadow-subtle rounded-[20px] p-[16px] md:p-[20px] shadow-sm transition-all duration-300 ${
         open ? "shadow-md" : ""
       }`}
     >

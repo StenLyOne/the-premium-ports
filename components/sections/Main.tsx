@@ -12,12 +12,17 @@ const benefits = [
 
 export default function Main() {
   return (
-    <main id="product" className="relative px-[16px] md:px-[40px] pb-[70px] md:pb-[211px] text-white">
+    <main
+      id="product"
+      className="relative px-[16px] md:px-[40px] pb-[70px] md:pb-[211px] text-white"
+    >
       <div className="relative max-w-[1328px] flex mx-auto z-[1]">
-        <div className="md:w-1/2 space-y-[50px] pt-[78px] md:pt-[220px]">
-          <div className="space-y-[42px] md:space-y-[66px]">
-            <div className="space-y-[20px]">
-              <h5>Our products are trusted by top professionals.</h5>
+        <div className="md:w-1/2 space-y-[48px] pt-[100px] min-[500px]:pt-[140px] md:pt-[180px]">
+          <div className="space-y-[40px] md:space-y-[56px]">
+            <div className="space-y-[20px] md:space-y-[24px]">
+              <p className="!text-[18px] md:!text-[24px]">
+                Our products are trusted by top professionals.
+              </p>
               <div className="flex gap-[32px] justify-center md:justify-start">
                 <img
                   src="/svg/trustpilot.svg"
@@ -32,17 +37,20 @@ export default function Main() {
                 />
               </div>
             </div>
-            <div className="w-full md:max-w-[612px] space-y-[28px]">
-              <h1 className="text-center md:text-left">
-                Premium Residential Proxies
-              </h1>
-              <p className="!text-[18px] md:!text-[24px]">
-                The Premium Ports ® company offers the best price/quality ratio
-                on the market for middle and large RPA and security projects. We
-                provide the best premium quality and personal support to each
-                client, with options on demand for maximum result.
-              </p>
-              <div className="space-y-[18px] md:space-y-[28px]">
+            <div className="w-full md:max-w-[612px] space-y-[40px] md:space-y-[48px]">
+              <div className="space-y-[20px] md:space-y-[24px]">
+                <h1 className="text-center md:text-left">
+                  Premium Residential Proxies
+                </h1>
+                <p className="!text-[18px] md:!text-[24px]">
+                  The Premium Ports ® company offers the best price/quality
+                  ratio on the market for middle and large RPA and security
+                  projects. We provide the best premium quality and personal
+                  support to each client, with options on demand for maximum
+                  result.
+                </p>
+              </div>
+              <div className="space-y-[18px] md:space-y-[24px]">
                 {benefits.map((ele, index) => (
                   <RowItem key={index} text={ele} />
                 ))}

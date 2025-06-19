@@ -36,8 +36,8 @@ export default function Locations() {
     >
       {/* Header */}
       <div className=" space-y-[40px] md:space-y-[80px]">
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-[1328px] mx-auto flex gap-8">
-          <div className="space-y-[22px] px-[16px] md:max-w-[504px] text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-between items-center max-w-[1328px] mx-auto flex gap-[40px]">
+          <div className="space-y-[20px] md:space-y-[24px] px-[16px] md:px-[0px] md:max-w-[504px] text-center md:text-left">
             <h2 className="!text-black">Top Locations</h2>
             <h3 className="!text-black !font-[400]">
               Our company offers mobile and home residential proxies in 195

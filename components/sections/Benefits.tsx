@@ -16,8 +16,10 @@ const data = [
   {
     img: "/svg/location.svg",
     title: "Location targeting",
-    description:
-      "You can use a wide number of parameters for targeting by :Country City State or region ASN (ISP number)",
+    description: {
+      text: "You can use a wide number of parameters for targeting by:",
+      list: ["Country", "City", "State or region", "ASN (ISP number)"],
+    },
   },
   {
     img: "/svg/mobile.svg",
@@ -32,8 +34,10 @@ const data = [
   {
     img: "/svg/protocols.svg",
     title: "Protocols",
-    description:
-      "Our backend supports different protocols : HTTP HTTPS SOCKS5 DNS forwarding",
+    description: {
+      text: "Our backend supports different protocols:",
+      list: ["HTTP", "HTTPS", "SOCKS5", "DNS forwarding"],
+    },
   },
   {
     img: "/svg/Whitelisting.svg",
