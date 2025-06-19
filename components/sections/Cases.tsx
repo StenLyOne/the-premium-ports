@@ -33,10 +33,10 @@ const data = [
       "Our proxies are a good solution to register and farm accounts on Facebook, Twitter, LinkedIn, and many others. ASN option can be used for same location targeting for account",
   },
   {
-    img: "/svg/Social network .svg",
-    title: "Social network ",
+    img: "/svg/QA Testing.svg",
+    title: "QA Testing",
     description:
-      "Our proxies are a good solution to register and farm accounts on Facebook, Twitter, LinkedIn, and many others. ASN option can be used for same location targeting for account",
+      "Our proxy network is great for companies that need worldwide locations for application and website testing.",
   },
 ];
 
