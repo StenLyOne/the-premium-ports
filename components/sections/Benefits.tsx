@@ -40,7 +40,7 @@ const data = [
     },
   },
   {
-    img: "/svg/Whitelisting.svg",
+    img: "/svg/whitelisting.svg",
     title: "Whitelisting",
     description:
       "You are able to control data usage by whitelisting your own server IPs.",
