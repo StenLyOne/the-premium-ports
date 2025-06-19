@@ -14,7 +14,7 @@ export default function Main() {
   return (
     <main
       id="product"
-      className="relative px-[16px] md:px-[40px] pb-[70px] md:pb-[211px] text-white"
+      className="relative px-[16px] md:px-[40px] pb-[30px] md:pb-[211px] text-white"
     >
       <div className="relative max-w-[1328px] flex mx-auto z-[1]">
         <div className="md:w-1/2 space-y-[48px] pt-[100px] min-[500px]:pt-[140px] md:pt-[180px]">
@@ -69,10 +69,10 @@ export default function Main() {
       <div>
         <div
           data-astro-cid-kvz7kqaw="true"
-          className="!absolute top-0 left-0 right-0 h-[90%] z-[0]"
+          className="!absolute top-0 left-0 right-0  h-[100%] md:h-[90%] z-[0]"
           style={{
             background:
-              " linear-gradient( #00143B 37%, #263A8F 57%, #2F4ABF 71%, #4564E9 85%, #FFFFFF 100%)",
+              " linear-gradient( #00143B 30%, #263A8F 55%, #2F4ABF 60%, #4564E9 70%, #FFFFFF 100%)",
           }}
         >
           {" "}

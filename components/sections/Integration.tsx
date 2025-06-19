@@ -28,13 +28,13 @@ export default function Integration() {
   return (
     <section
       ref={sectionRef}
-      className="pb-[40px] min-[1100px]:px-[40px] py-[40px] md:py-[140px] bg-white space-y-[80px]"
+      className=" min-[1100px]:px-[40px] py-[60px] md:py-[140px] bg-white space-y-[80px]"
     >
       <div className="max-w-[1328px] mx-auto">
         {/* Заголовки */}
         <div className="text-black space-y-[24px] px-[16px] md:px-0">
           <h2 className="text-center">Good for integration with</h2>
-          <h3 className="text-center">
+          <h3 className="text-center !font-[400]">
             Tested and compatible with all major antidetect solutions.
           </h3>
         </div>

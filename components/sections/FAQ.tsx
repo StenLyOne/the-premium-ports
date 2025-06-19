@@ -49,12 +49,12 @@ const data = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="pb-[40px] px-[16px] md:px-[40px] py-[40px] md:py-[140px] bg-[#F3F5FF] overflow-hidden">
+    <section id="faq" className="px-[16px] md:px-[40px] py-[60px] md:py-[140px] bg-[#F3F5FF] overflow-hidden">
       <div className="max-w-[1328px] mx-auto flex flex-col justify-between md:flex-row gap-[40px]">
         <h2 className="text-black text-center">
           FAQ
         </h2>
-        <div className="flex-1 max-w-[980px] flex flex-col gap-[24px]">
+        <div className="flex-1 max-w-[980px] flex flex-col gap-[16px] md:gap-[24px]">
           {data.map((item, i) => (
             <FAQItem key={i} question={item.question} answer={item.answer} />
           ))}

@@ -79,7 +79,7 @@ const data = [
 
 export default function Benefits() {
   return (
-    <section className="pb-[40px] md:px-[40px] md:pb-[140px]">
+    <section className="pb-[20px] md:px-[40px] md:pb-[140px]">
       <div className="max-w-[1328px] mx-auto">
         {/* ✅ Десктоп: 3x4 сетка */}
         <div className="hidden md:grid grid-cols-3 gap-[24px] relative">

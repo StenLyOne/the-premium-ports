@@ -51,7 +51,7 @@ const data = [
 
 export default function Prices() {
   return (
-    <section id="pricing" className="bg-secondary pt-[40px] md:pt-[140px]">
+    <section id="pricing" className="bg-secondary pt-[60px] md:pt-[140px]">
       <div className="space-y-[40px] md:space-y-[48px]">
         <div className="text-center text-black space-y-[20px] md:space-y-[24px] px-[16px] md:px-[40px]">
           <h2>Subscriptions and prices</h2>
@@ -75,7 +75,7 @@ export default function Prices() {
           ))}
         </div>
       </div>
-      <div className="flex justify-center items-center flex-col md:flex-row gap-[12px] md:gap-[24px] pt-[30px] md:pt-[40px] pb-[40px] md:pb-[100px]">
+      <div className="flex justify-center items-center flex-col md:flex-row gap-[12px] md:gap-[24px] pt-[30px] md:pt-[40px] pb-[60px] md:pb-[100px]">
         <p>Payment Methods:</p>
         <div className="flex gap-[24px]" >
           <img src="/svg/payment.svg" alt="" />

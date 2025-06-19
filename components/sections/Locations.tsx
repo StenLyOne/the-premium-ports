@@ -32,7 +32,7 @@ export default function Locations() {
     <section
       ref={ref}
       id="locations"
-      className="pb-[40px]  md:px-[40px] py-[40px] md:py-[140px] bg-white "
+      className=" md:px-[40px] py-[60px] md:py-[140px] bg-white "
     >
       {/* Header */}
       <div className=" space-y-[40px] md:space-y-[80px]">

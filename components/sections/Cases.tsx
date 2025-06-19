@@ -42,7 +42,7 @@ const data = [
 
 export default function Cases() {
   return (
-    <section className="pb-[40px]  py-[40px] md:py-[140px]  bg-secondary md:px-[40px]">
+    <section className=" py-[60px] md:py-[140px]  bg-secondary md:px-[40px]">
       <div className="max-w-[1328px] mx-auto space-y-[40px] md:space-y-[48px]">
         <div className=" max-w-[800px] mx-auto space-y-[20px] md:space-y-[24px] px-[16px] md:px-[0px]">
           <h2 className="text-center text-black ">Usage Cases</h2>
