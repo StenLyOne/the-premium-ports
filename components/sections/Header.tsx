@@ -7,8 +7,8 @@ export default function Header() {
 
   const navItems = ["Product", "Pricing", "Locations", "FAQ"];
   return (
-    <header className="fixed top-0 right-0 left-0 z-[100] bg-[#00143B]/90">
-      <div className="flex justify-between items-center py-[24px] px-[16px] md:px-[40px] gap-[16px] md:gap-[24px]">
+    <header className="fixed top-0 right-0 left-0 z-[100] bg-[#00143B]/90 px-[16px] md:px-[40px]">
+      <div className="max-w-[1328px] mx-auto flex justify-between items-center py-[24px]  gap-[16px] md:gap-[24px]">
         <div className="flex-shrink min-w-0 max-[500px]:w-[60%] min-[500]:w-max">
           <img
             src="/svg/logo-white.svg"

@@ -42,7 +42,7 @@ const data = [
 
 export default function Cases() {
   return (
-    <section className="pb-[40px]  py-[40px] md:py-[140px]  bg-secondary">
+    <section className="pb-[40px]  py-[40px] md:py-[140px]  bg-secondary md:px-[40px]">
       <div className="max-w-[1328px] mx-auto space-y-[40px] md:space-y-[48px]">
         <div className=" max-w-[800px] mx-auto space-y-[24px]">
           <h2 className="text-center text-black ">Usage Cases</h2>
@@ -52,7 +52,7 @@ export default function Cases() {
           </h3>
         </div>
         <div>
-          <div className="hidden md:grid grid-cols-3 gap-[24px] md:gap[24px] px-[40px]">
+          <div className="hidden md:grid grid-cols-3 gap-[24px] md:gap[24px] ">
             {data.slice(0, 12).map((ele, index) => (
               <BenefitsItem
                 key={index}
