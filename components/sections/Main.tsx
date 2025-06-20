@@ -19,7 +19,7 @@ export default function Main() {
       <div className="relative max-w-[1328px] flex mx-auto z-[1]">
         <div className="md:w-1/2 space-y-[48px] pt-[100px] min-[500px]:pt-[140px] md:pt-[180px]">
           <div className="space-y-[40px] md:space-y-[56px]">
-            <div className="space-y-[20px] md:space-y-[48px]">
+            <div className="space-y-[20px] md:space-y-[56px]">
               <p className="!text-[18px] md:!text-[24px]">
                 Our products are trusted by top professionals.
               </p>

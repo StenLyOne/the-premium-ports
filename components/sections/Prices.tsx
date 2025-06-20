@@ -43,7 +43,7 @@ const data = [
     perHour: "0.80",
     included: "3000",
     description:
-      "Serious amount of traffic providing for own services Ideal for large teams and automation professionals (Dedicated Pool)",
+      "Serious amount of traffic providing for own services Ideal for large teams and automation professionals",
     monthly: "2400",
     button: "accent",
   },
