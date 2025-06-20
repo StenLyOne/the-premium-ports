@@ -45,6 +45,11 @@ UI components like cards, buttons, etc., live inside `components/ui/`, e.g.:
 import BenefitsItem from "@/components/ui/BenefitsItem";
 ```
 
+## 🔍 SEO
+Basic SEO is configured via the metadata object in app/layout.tsx.
+It includes title, description, Open Graph and Twitter tags for rich link previews, as well as favicon and canonical link setup.
+The preview image (/img/og-preview.png) is used for sharing on social platforms and should be 1200×630 px.
+
 ## 🧪 Local Development
 
 ```bash
@@ -58,3 +63,5 @@ Then go to `http://localhost:3000`.
 
 - Motion/scroll effects are implemented using `framer-motion`.
 - All content is static and structured via reusable components.
+
+

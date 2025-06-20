@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,13 +11,12 @@ export default function Header() {
     <header className="fixed top-0 right-0 left-0 z-[100] bg-[#00143B]/90 px-[16px] md:px-[40px]">
       <div className="max-w-[1328px] mx-auto flex justify-between items-center py-[24px]  gap-[16px] md:gap-[24px]">
         <div className="flex-shrink min-w-0 max-[500px]:w-[60%] min-[500]:w-max">
-          <img
+          <a href="#product"><img
             src="/svg/logo-white.svg"
             alt="Logo"
             className="max-w-full h-auto object-contain z-100 relative"
-          />
+          /></a>
         </div>
-        
 
         {/* Desktop nav */}
         <nav className="hidden xl:flex gap-[24px]">
@@ -35,22 +35,29 @@ export default function Header() {
 
         <div className="flex-1 min-w-0 md:hidden">
           <div className="flex justify-center">
-            <button
-              className=" w-full max-w-[200px] min-w-[90px] py-[8px] px-[20px] text-white text-[10px] font-bold rounded-[20px]"
-              style={{
-                background:
-                  "linear-gradient(90deg, #00C5FF 0%, #153BFF 54%, #CAB7FC 98%)",
-              }}
-            >
-              GET DEAL
-            </button>
+            <Link href={"/#pricing"}>
+              <button
+                className=" w-full max-w-[200px] min-w-[90px] py-[8px] px-[20px] text-white text-[10px] font-bold rounded-[20px]"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #00C5FF 0%, #153BFF 54%, #CAB7FC 98%)",
+                }}
+              >
+                GET DEAL
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* Burger */}
         <div className="flex gap-[24px] items-center justify-center">
           <div className="hidden md:flex gap-[24px]">
-            <Button text="GET DEAL" color="gradient" link="/" size={true} />
+            <Button
+              text="GET DEAL"
+              color="gradient"
+              link="/#pricing"
+              size={true}
+            />
           </div>
 
           <button
@@ -93,7 +100,13 @@ export default function Header() {
               {item}
             </a>
           ))}
-          <Button text="GET DEAL" color="gradient" link="/" size={true} />
+          <Button
+            text="GET DEAL"
+            color="gradient"
+            link="/#pricing"
+            size={true}
+            onClick={() => setIsOpen(false)}
+          />
         </div>
       </div>
     </header>

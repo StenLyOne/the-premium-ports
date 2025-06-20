@@ -5,9 +5,16 @@ interface Props {
   color: "gradient" | "blue" | "white";
   link: string;
   size?: boolean | string;
+  onClick?: () => void;
 }
 
-export default function Button({ text, color, link, size = false }: Props) {
+export default function Button({
+  text,
+  color,
+  link,
+  size = false,
+  onClick,
+}: Props) {
   const widthClass =
     size === true ? "w-[280px]" : size === false ? "w-[180px]" : "w-full";
 
@@ -34,6 +41,7 @@ export default function Button({ text, color, link, size = false }: Props) {
     <Link href={link}>
       <div
         className={`py-[18px] ${widthClass} ${bgClass} ${hoverClass} flex justify-center items-center rounded-[20px] cursor-pointer transition-shadow duration-300 ease-in-out`}
+        onClick={onClick}
       >
         <p className={`${textClass} !text-[20px] !leading-[16px] !font-bold`}>
           {text}
