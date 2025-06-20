@@ -23,6 +23,7 @@ export default function Footer() {
         src="/svg/logo-black.svg"
         alt=""
       />
+      
     </footer>
   );
 }

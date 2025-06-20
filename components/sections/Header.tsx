@@ -16,6 +16,7 @@ export default function Header() {
             className="max-w-full h-auto object-contain z-100 relative"
           />
         </div>
+        
 
         {/* Desktop nav */}
         <nav className="hidden xl:flex gap-[24px]">
