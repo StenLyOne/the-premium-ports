@@ -19,7 +19,7 @@ export default function Main() {
       <div className="relative max-w-[1328px] flex mx-auto z-[1]">
         <div className="md:w-1/2 space-y-[48px] pt-[100px] min-[500px]:pt-[140px] md:pt-[180px]">
           <div className="space-y-[40px] md:space-y-[56px]">
-            <div className="space-y-[20px] md:space-y-[24px]">
+            <div className="space-y-[20px] md:space-y-[48px]">
               <p className="!text-[18px] md:!text-[24px]">
                 Our products are trusted by top professionals.
               </p>
@@ -59,13 +59,8 @@ export default function Main() {
           </div>
           <Button link="/" color={"gradient"} text={"BUY  NOW"} size={true} />
         </div>
-        <img className="w-1/2 hidden md:block" src="/svg/OBJECTS.svg" alt="" />
+        <img className="w-1/2 hidden md:block" src="/svg/OBJECTS-v2b.svg" alt="" />
       </div>
-      {/* <img
-        src="/svg/graadient-bg.svg"
-        alt=""
-        className="absolute w-full min-h-[1371px] top-0 left-0 right-0 z-0"
-      /> */}
       <div>
         <div
           data-astro-cid-kvz7kqaw="true"
